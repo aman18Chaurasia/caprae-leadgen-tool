@@ -1,65 +1,40 @@
-A 5-hour prototype designed for Caprae Capital's AI Readiness Challenge. This tool scrapes company data, enriches it using business logic, and scores the lead based on high-level sales intelligence factors.
+# 🚀 Caprae AI Lead Qualification Tool
+
+A lightweight, real-time lead enrichment engine built in response to Caprae Capital’s AI Readiness Challenge. Given a domain, this tool simulates scraping + enrichment and returns a scored lead profile to accelerate outbound B2B sales workflows.
+
+![Caprae Leadgen](https://img.shields.io/badge/status-MVP-green)  
+🎥 [Watch Demo Video](YOUR_VIDEO_LINK_HERE)
 
 ---
 
-## ⚙️ Setup Instructions
-```bash
-git clone <your-repo-url>
-cd leadgen_tool_caprae
-pip install -r requirements.txt
-```
+## 📌 Challenge Objective
 
-### Start Backend:
-```bash
-uvicorn src.app:app --reload
-```
-
-### Start Frontend:
-```bash
-streamlit run src/ui.py
-```
+> **Build a working prototype in 5 hours** that demonstrates how AI/automation can improve lead generation beyond scraping — delivering high-signal, actionable insights for M&A and sales.
 
 ---
 
-## 📦 Features
-- Input: Company domain (e.g., `example.com`)
-- Output: Structured business lead profile
-- Fields: Name, LinkedIn, Description, Industry, Size, Stage, Score
-- Modular structure, API-ready backend
+## 🔧 Features
+
+- ✅ **FastAPI backend** with real-time API
+- ✅ **Simulated scraper** and enrichment engine
+- ✅ **Streamlit frontend** for demo purposes
+- ✅ **Lead scoring** based on stage, size, and industry
+- ✅ Clean architecture — ready for enrichment APIs like Clearbit, Hunter.io, Apollo
+- ✅ Tested via REST + Jupyter Notebook
 
 ---
 
-## 🧠 Tech Stack
-- **FastAPI** – backend API
-- **Streamlit** – frontend UI
-- **BeautifulSoup** – (placeholder for real scraping)
-- **Mocked Enrichment** – upgrade to Clearbit, Hunter.io, Apollo APIs
+## 🛠 Tech Stack
+
+| Layer     | Tech Used       |
+|-----------|-----------------|
+| Backend   | FastAPI, Uvicorn |
+| Frontend  | Streamlit        |
+| Scraping  | BeautifulSoup (mocked) |
+| Enrichment | Randomized logic (ready for API plug-in) |
+| Docs + Demo | Markdown, Jupyter, Video walkthrough |
 
 ---
 
-## 📁 Directory Structure
-```
-leadgen_tool_caprae/
-├── src/
-│   ├── app.py         # FastAPI app
-│   ├── scraper.py     # Scraper logic
-│   ├── enrich.py      # Enrichment logic
-│   └── ui.py          # Streamlit frontend
-├── README.md
-```
+## 📁 Folder Structure
 
----
-
-## 📑 Evaluation-Ready Highlights
-- Focused on **business alignment**: prioritizes lead scoring
-- Simple, elegant **UI/UX** with Streamlit
-- **Expandable architecture** to plug in real enrichment APIs
-
----
-
-## 📄 Report
-See `report.md` for project rationale, approach, and next steps.
-
----
-
-### Author: Aman Chaurasia
