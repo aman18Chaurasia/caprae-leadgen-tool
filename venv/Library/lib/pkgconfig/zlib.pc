@@ -1,0 +1,13 @@
+prefix=D:/leadgen-tool/venv/Library
+exec_prefix=D:/leadgen-tool/venv/Library
+libdir=D:/leadgen-tool/venv/Library/lib
+sharedlibdir=D:/leadgen-tool/venv/Library/lib
+includedir=D:/leadgen-tool/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
